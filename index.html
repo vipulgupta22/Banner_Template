@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>FullStack Practical</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+       *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Source Code Pro', monospace;
+        }
+        #mainbox{
+            width: 100%;
+            height: 100vh;
+            background-image: url("./thought-catalog-505eectW54k-unsplash.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #mainbox .transbox {
+            background-color:black;
+            height: 100vh;
+            opacity: 0.8;
+        }
+        #navig{
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+        }
+        #navig ul{
+            padding-top: 30px;
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            text-decoration: none;
+            list-style: none;
+            /* padding-right: 200px;
+            padding-left: 200px; */
+            text-transform: uppercase;
+        }
+        #navig ul #right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #navig ul li{
+            margin-right: 5px;
+            padding: 5px;
+        }
+        #navig ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        #container{
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #container h2{
+            color: yellow;
+            font-size: 70px;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+        }
+        #container p{
+            width: 50%;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        #butn{
+            margin-top: 10px;
+        }
+        #butn a{
+            width: 150px;
+            padding: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border: 2px solid white;
+            margin-right: 5px;
+            border-radius: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 15px;
+            color: white;
+        }
+        #butn #contact{
+            border:2px solid yellow;
+            background-color: yellow;
+            color: black;
+        }
+        #float a{
+            right: 40px;
+            bottom: 40px;
+            position: absolute;
+        }
+        #float a{
+            color: white;
+            background-color: #0081CF;
+            border-radius: 50%;
+            width: 40px;
+            text-align: center;
+            height: 40px;
+        }
+        #float a i{
+            padding-top: 13px;
+            padding-left: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainbox">
+        <div class="transbox">
+            <div id="navig">
+                <ul>
+                    <div id="left"><li><a href="#">MOURITHEMES</a></li></div>
+                    <div id="right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div id="container">
+                <h2>Megan  Lee</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing equae libero, officiis id distinctio quasi. Molestias itaque laborum rerum tempora!</p>
+                <div id="butn">
+                    <a href="#" id="contact">Contact</a>
+                    <a href="#">My Work</a>
+                </div>
+            </div>
+            <div id="float"><a id="floatbelow" href="#"><i class="fab fa-dyalog"></i></a></div>
+        </div>
+    </div>
+</body>
+</html>
